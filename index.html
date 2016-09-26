@@ -17,62 +17,75 @@
 </head>
 
 <body>
-	<table align="center">
-		<tr>
-			<th colspan=3 id="heading">jQuery Mortgage Calculator</th>
-		</tr>
-		<tr>
-			<td><p></p></td>
-		</tr>
-			<td>
-				<label>Loan Balance</label>
-			</td>
-			<td>
-				<input type="text" class="form-control"></input>
-			</td>
-		</tr>
-		<tr>
-			<td><p></p></td>
-		</tr>
-		<tr>
-			<td>
-				<label>Interest Rate (%)</label>
-			</td>
-			<td>
-				<input type="text" class="form-control"></input>
-			</td>
-		</tr>
-		<tr>
-			<td><p></p></td>
-		</tr>
-		<tr>
-			<td>
-				<label>Loan Term (years)</label>
-			</td>
-			<td>
-				<input type="text" class="form-control"></input>
-			</td>
-		</tr>
-		<tr>
-			<td><p></p></td>
-		</tr>
-		<tr>	
-			<td>
-				<label>Period</label>
-			</td>
-			<td>
-				<select class="form-control"></select>
-				<p></p>
-				<button class="btn btn-primary">Calculate</button>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<p></p>
-			</td>
-		</tr>
+		<div class="row">
+  			<div class="col-xs-8 col-xs-offset-2">
+	  			<fieldset>
+	  				
+	  				<legend class="text-center">jQuery Mortgage Calculator</legend>	
+	  				
+	  				
+	  				<div class="row">
+	  					<div class="col-xs-4 text-right">
+	  						<label class="loan-label">Loan Balance</label>
+	  					</div>
 
-	</table>
+	  					<div class="col-xs-6">
+	  						<input id="loanBalance" class="form-control" /><br/>
+	  					</div>
+	  				</div>	
+
+
+
+	  				<div class="row">
+	  					<div class="col-xs-4 text-right">
+	  						<label class="loan-label">Interest Rate (%)</label>
+	  					</div>
+
+	  					<div class="col-xs-6">
+	  						<input id="interestRate" class="form-control" /><br/>
+	  					</div>
+	  				</div>
+
+
+
+	  				<div class="row">
+						<div class="col-xs-4 text-right">
+							<label class="loan-label">Loan Term (years)</label>
+						</div>
+
+						<div class="col-xs-6">
+							<input id="termInYears" class="form-control" /><br/>
+						</div>
+	  				</div>
+
+	  			
+
+	  				<div class="row">
+	  					<div class="col-xs-4 text-right">
+	  						<label class="loan-label">Period</label>
+	  					</div>
+
+	  					<div class="col-xs-6">
+	  						<select id="paymentPeriod" class="form-control"></select><br />
+	  						
+	  					</div>
+	  				</div>
+
+
+
+	  				<div class="row">
+	  					<div class="col-xs-6 col-xs-offset-4">
+	  						<button class="btn btn-primary">Calculate</button>
+	  					</div>	
+	  				</div>		
+
+
+	  			</fieldset>
+  			</div>	
+  		</div>
+
+
+			
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="mortgageCalc.js"></script>
