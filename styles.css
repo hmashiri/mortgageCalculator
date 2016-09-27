@@ -1,6 +1,11 @@
+.myclass
+{
+	width: 80%;
+}
+
+
 .loan-label
 {
 	margin-top: 5px;
 	font-size: 14px;
-	font-family: Arial;
 }

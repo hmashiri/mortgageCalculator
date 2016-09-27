@@ -17,12 +17,17 @@
 </head>
 
 <body>
-		<div class="row">
-  			<div class="col-xs-8 col-xs-offset-2">
-	  			<fieldset>
+		<div class="container myclass">
+  				<fieldset>
+
 	  				
-	  				<legend class="text-center">jQuery Mortgage Calculator</legend>	
-	  				
+	  				<div class="row">
+	  					<div class="col-xs-6 col-xs-offset-4">
+	  						<legend class="text-left">jQuery Mortgage Calculator</legend>	
+	  					</div>
+	  				</div>
+
+
 	  				
 	  				<div class="row">
 	  					<div class="col-xs-4 text-right">
@@ -30,7 +35,7 @@
 	  					</div>
 
 	  					<div class="col-xs-6">
-	  						<input id="loanBalance" class="form-control" /><br/>
+	  						<input id="loanBalanceInput" class="form-control" type="number" /><br/>
 	  					</div>
 	  				</div>	
 
@@ -42,7 +47,7 @@
 	  					</div>
 
 	  					<div class="col-xs-6">
-	  						<input id="interestRate" class="form-control" /><br/>
+	  						<input id="interestRateInput" class="form-control" type="number" /><br/>
 	  					</div>
 	  				</div>
 
@@ -54,7 +59,7 @@
 						</div>
 
 						<div class="col-xs-6">
-							<input id="termInYears" class="form-control" /><br/>
+							<input id="termInYearsInput" class="form-control" type="number" /><br/>
 						</div>
 	  				</div>
 
@@ -66,8 +71,7 @@
 	  					</div>
 
 	  					<div class="col-xs-6">
-	  						<select id="paymentPeriod" class="form-control"></select><br />
-	  						
+	  						<select id="paymentPeriod" class="form-control"></select><br/>	
 	  					</div>
 	  				</div>
 
@@ -75,19 +79,26 @@
 
 	  				<div class="row">
 	  					<div class="col-xs-6 col-xs-offset-4">
-	  						<button class="btn btn-primary">Calculate</button>
+	  						<button type="button" class="btn btn-primary" onclick="mortgageCalc()">Calculate</button><br/>
 	  					</div>	
 	  				</div>		
 
 
+
+	  				<div class="row">
+	  					<div class="col-xs-8 col-xs-offset-2 text-left">
+	  						<br/><label id="results"></label>
+	  					</div>
+	  				</div>	
+
+
 	  			</fieldset>
-  			</div>	
   		</div>
 
 
 			
 
-	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
 	<script src="mortgageCalc.js"></script>
 </body>
 </html>
