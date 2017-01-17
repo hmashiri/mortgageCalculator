@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -17,83 +16,57 @@
 </head>
 
 <body>
-		<div class="container myclass">
-  				<fieldset>
-
-	  				
-	  				<div class="row">
-	  					<div class="col-xs-6 col-xs-offset-4">
-	  						<legend class="text-left">jQuery Mortgage Calculator</legend>	
-	  					</div>
-	  				</div>
-
-
-	  				
-	  				<div class="row">
-	  					<div class="col-xs-4 text-right">
-	  						<label class="loan-label">Loan Balance</label>
-	  					</div>
-
-	  					<div class="col-xs-6">
-	  						<input id="loanBalanceInput" class="form-control" type="number" /><br/>
-	  					</div>
-	  				</div>	
-
-
-
-	  				<div class="row">
-	  					<div class="col-xs-4 text-right">
-	  						<label class="loan-label">Interest Rate (%)</label>
-	  					</div>
-
-	  					<div class="col-xs-6">
-	  						<input id="interestRateInput" class="form-control" type="number" /><br/>
-	  					</div>
-	  				</div>
-
-
-
-	  				<div class="row">
-						<div class="col-xs-4 text-right">
-							<label class="loan-label">Loan Term (years)</label>
-						</div>
-
-						<div class="col-xs-6">
-							<input id="termInYearsInput" class="form-control" type="number"/><br/>
-						</div>
-	  				</div>
-
-	  			
-
-	  				<div class="row">
-	  					<div class="col-xs-4 text-right">
-	  						<label class="loan-label">Period</label>
-	  					</div>
-
-	  					<div class="col-xs-6">
-	  						<select id="paymentPeriod" class="form-control"></select><br/>	
-	  					</div>
-	  				</div>
-
-
-
-	  				<div class="row">
-	  					<div class="col-xs-6 col-xs-offset-4">
-	  						<button type="button" class="btn btn-primary" id="onclick">Calculate</button><br/>
-	  					</div>	
-	  				</div>		
-
-
-
-	  				<div class="row">
-	  					<div class="col-xs-8 col-xs-offset-4 text-left">
-	  						<br/><label id="results"></label>
-	  					</div>
-	  				</div>	
-
-
-	  			</fieldset>
-  		</div>
+	<div class="container myclass">
+  		<fieldset>		
+	  		<div class="row">
+				<div class="col-xs-6 col-xs-offset-4">
+	  				<legend class="text-left">jQuery Mortgage Calculator</legend>	
+	  			</div>
+	  		</div>	
+	  		<div class="row">
+				<div class="col-xs-4 text-right">
+					<label class="loan-label">Loan Balance</label>
+	  			</div>
+	  			<div class="col-xs-6">
+	  				<input id="loanBalanceInput" class="form-control" type="number" /><br/>
+	  			</div>
+	  		</div>	
+	  		<div class="row">
+	  			<div class="col-xs-4 text-right">
+					<label class="loan-label">Interest Rate (%)</label>
+	  			</div>
+	  			<div class="col-xs-6">
+	  				<input id="interestRateInput" class="form-control" type="number" /><br/>					</div>
+	  			</div>
+			</div>
+	  		<div class="row">
+				<div class="col-xs-4 text-right">
+					<label class="loan-label">Loan Term (years)</label>
+				</div>
+				<div class="col-xs-6">
+					<input id="termInYearsInput" class="form-control" type="number"/><br/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 text-right">
+	  				<label class="loan-label">Period</label>
+	 			</div>
+	  			<div class="col-xs-6">
+	  				<select id="paymentPeriod" class="form-control"></select><br/>	
+				</div>
+			</div>
+	  		<div class="row">
+	  			<div class="col-xs-6 col-xs-offset-4">
+	  				<button type="button" class="btn btn-primary" id="onclick">Calculate</button><br/>
+	  			</div>	
+	  		</div>		
+	  		<div class="row">
+	  			<div class="col-xs-8 col-xs-offset-4 text-left">
+	  				<br/><label id="results"></label>
+	  			</div>
+	  		</div>	
+	  	</fieldset>
+  	</div>
 
 
 			
